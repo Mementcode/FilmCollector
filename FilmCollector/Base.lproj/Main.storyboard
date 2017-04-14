@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +14,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FilmCollector" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="FilmCollector" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,7 +22,20 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6oW-rv-NRf">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="6oW-rv-NRf" secondAttribute="trailing" id="1lb-aw-XwK"/>
+                            <constraint firstItem="6oW-rv-NRf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QTc-xe-t15"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6oW-rv-NRf" secondAttribute="bottom" id="c4s-AA-VJk"/>
+                            <constraint firstItem="6oW-rv-NRf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="goz-CR-SvU"/>
+                            <constraint firstItem="6oW-rv-NRf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s0U-YJ-Eat"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uWG-gF-k4F">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ywk-Nx-SuU">
@@ -30,6 +44,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="6oW-rv-NRf" id="ZbS-1h-86x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,10 +78,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOG-W9-25I">
-                                <rect key="frame" x="164" y="314" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="172" y="314" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
                                 <connections>
-                                    <action selector="addTapped:" destination="S55-pb-h3h" eventType="touchUpInside" id="Qcp-5H-XcX"/>
+                                    <action selector="addTapped:" destination="S55-pb-h3h" eventType="touchUpInside" id="oun-jv-m3O"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -83,19 +100,19 @@
                         <rightBarButtonItems>
                             <barButtonItem systemItem="camera" id="crD-Ld-Rcc">
                                 <connections>
-                                    <action selector="cameraTapped:" destination="S55-pb-h3h" id="Pey-tQ-rd4"/>
+                                    <action selector="cameraTapped:" destination="S55-pb-h3h" id="JQc-gZ-HyB"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Photos" id="hH6-18-meT">
                                 <connections>
-                                    <action selector="photosTapped:" destination="S55-pb-h3h" id="ESI-U9-qNr"/>
+                                    <action selector="photosTapped:" destination="S55-pb-h3h" id="UmY-NE-Jhi"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <outlet property="gameImageView" destination="5aQ-bd-GN8" id="zHe-7I-unr"/>
-                        <outlet property="titleTextField" destination="k1V-4B-wIY" id="JgQ-0V-Gy4"/>
+                        <outlet property="filmImageView" destination="5aQ-bd-GN8" id="Poa-1P-TFF"/>
+                        <outlet property="titleTextField" destination="k1V-4B-wIY" id="337-ap-STi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4MT-vx-reC" userLabel="First Responder" sceneMemberID="firstResponder"/>
