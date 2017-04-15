@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Film Catologue-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="FilmCollector" customModuleProvider="target" sceneMemberID="viewController">
@@ -37,10 +37,10 @@
                             <constraint firstItem="6oW-rv-NRf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s0U-YJ-Eat"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uWG-gF-k4F">
+                    <navigationItem key="navigationItem" title="Film Catologue" id="uWG-gF-k4F">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ywk-Nx-SuU">
                             <connections>
-                                <segue destination="S55-pb-h3h" kind="show" id="pye-hl-49P"/>
+                                <segue destination="S55-pb-h3h" kind="show" identifier="filmSegue" id="pye-hl-49P"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -84,6 +84,14 @@
                                     <action selector="addTapped:" destination="S55-pb-h3h" eventType="touchUpInside" id="oun-jv-m3O"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKt-SA-XbW">
+                                <rect key="frame" x="165" y="354" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="DeleteTapped:" destination="S55-pb-h3h" eventType="touchUpInside" id="gSK-t6-NbZ"/>
+                                    <action selector="addTapped:" destination="S55-pb-h3h" eventType="touchUpInside" id="oHl-Gu-2rd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -94,6 +102,8 @@
                             <constraint firstItem="DOG-W9-25I" firstAttribute="top" secondItem="k1V-4B-wIY" secondAttribute="bottom" constant="20" id="T4h-Tb-Ou5"/>
                             <constraint firstItem="k1V-4B-wIY" firstAttribute="centerX" secondItem="g9t-Qo-qVR" secondAttribute="centerX" id="nx6-Lu-eku"/>
                             <constraint firstItem="5aQ-bd-GN8" firstAttribute="centerX" secondItem="g9t-Qo-qVR" secondAttribute="centerX" id="so4-Yi-5iP"/>
+                            <constraint firstItem="mKt-SA-XbW" firstAttribute="top" secondItem="DOG-W9-25I" secondAttribute="bottom" constant="10" id="xTx-mx-i09"/>
+                            <constraint firstItem="mKt-SA-XbW" firstAttribute="centerX" secondItem="g9t-Qo-qVR" secondAttribute="centerX" id="xd7-WM-VtT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kUt-qs-YGP">
@@ -111,6 +121,8 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addUpdateButton" destination="DOG-W9-25I" id="Zv2-HT-KTm"/>
+                        <outlet property="deleteButton" destination="mKt-SA-XbW" id="cFS-Oz-JqV"/>
                         <outlet property="filmImageView" destination="5aQ-bd-GN8" id="Poa-1P-TFF"/>
                         <outlet property="titleTextField" destination="k1V-4B-wIY" id="337-ap-STi"/>
                     </connections>

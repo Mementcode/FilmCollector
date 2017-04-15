@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FilmCollector/FilmViewController.swift"
-            timestampString = "513873491.433128"
+            timestampString = "513980017.938699"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "photosTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FilmCollector/FilmViewController.swift"
-            timestampString = "513872762.152833"
+            timestampString = "513979250.709379"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "FilmViewController"
             landmarkType = "3">
             <Locations>
@@ -42,7 +42,7 @@
                   moduleName = "FilmCollector"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/callumbrennan/Desktop/Xcode/FilmCollector/FilmCollector/FilmViewController.swift"
-                  timestampString = "513876909.323703"
+                  timestampString = "513950933.486321"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -57,7 +57,7 @@
                   moduleName = "FilmCollector"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/callumbrennan/Desktop/Xcode/FilmCollector/FilmCollector/FilmViewController.swift"
-                  timestampString = "513876909.326735"
+                  timestampString = "513950933.489665"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -72,12 +72,12 @@
                   moduleName = "FilmCollector"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/callumbrennan/Desktop/Xcode/FilmCollector/FilmCollector/FilmViewController.swift"
-                  timestampString = "513876909.329275"
+                  timestampString = "513950933.49218"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
                   endingLineNumber = "17"
-                  offsetFromSymbolStart = "153">
+                  offsetFromSymbolStart = "156">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -87,7 +87,7 @@
                   moduleName = "FilmCollector"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/callumbrennan/Desktop/Xcode/FilmCollector/FilmCollector/FilmViewController.swift"
-                  timestampString = "513876909.331584"
+                  timestampString = "513950933.494712"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -104,11 +104,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FilmCollector/FilmViewController.swift"
-            timestampString = "513873491.433128"
+            timestampString = "513979250.709379"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "FilmViewController"
             landmarkType = "3">
             <Locations>
@@ -178,31 +178,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FilmCollector/FilmViewController.swift"
-            timestampString = "513875139.968588"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "addTapped(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FilmCollector/FilmViewController.swift"
-            timestampString = "513876867.861348"
+            timestampString = "513981099.775081"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "addTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -214,11 +198,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FilmCollector/FilmViewController.swift"
-            timestampString = "513875139.968588"
+            timestampString = "513981099.775081"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "addTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -236,6 +220,38 @@
             startingLineNumber = "47"
             endingLineNumber = "47"
             landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FilmCollector/FilmViewController.swift"
+            timestampString = "513980017.938699"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FilmCollector/FilmViewController.swift"
+            timestampString = "513980017.938699"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
